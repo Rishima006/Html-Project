@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #d6cbd7;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #260b35;
+      padding: 1rem;
+      color: white;
+      text-align: center;
+      font-size: x-large;
+      font-weight: bold;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .cart-container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .cart-header {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .cart-item:last-child {
+      border-bottom: none;
+    }
+
+    .item-details {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .item-details img {
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .item-name {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .item-price {
+      color: #000c01;
+      font-weight: bold;
+    }
+
+    .item-quantity {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .item-quantity button {
+      padding: 5px 10px;
+      background-color: #1b0540;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .item-quantity button:hover {
+      background-color: #45A049;
+    }
+
+    .cart-total {
+      margin-top: 20px;
+      text-align: right;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .checkout-button {
+      margin-top: 20px;
+      display: block;
+      text-align: center;
+      padding: 10px 20px;
+      background-color: #4e265d;
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    .checkout-button:hover {
+      background-color: #0f2501;
+    }
+    footer {
+        text-align: center;
+        background-color: #260b35;
+      padding: 1rem;
+      color: #fff;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <header>
+     YOUR CART
+  </header>
+
+  <div class="cart-container">
+    <div class="cart-header">
+      <div>Item</div>
+      <div>Quantity</div>
+      <div>Price</div>
+    </div>
+
+    <div class="cart-item">
+      <div class="item-details">
+        <img src="tomato.jfif" alt="Tomatoes" height="150px" width="150px">
+        <div class="item-name">Fresh Tomatoes</div>
+      </div>
+      <div class="item-quantity">
+        <button>-</button>
+        <span>1</span>
+        <button>+</button>
+      </div>
+      <div class="item-price">₹50</div>
+    </div>
+
+    <div class="cart-item">
+      <div class="item-details">
+        <img src="coca.jfif" alt="Potatoes" height="150px" width="150px">
+        <div class="item-name">Coca-Cola</div>
+      </div>
+      <div class="item-quantity">
+        <button>-</button>
+        <span>2</span>
+        <button>+</button>
+      </div>
+      <div class="item-price">₹152</div>
+    </div>
+
+    <div class="cart-item">
+      <div class="item-details">
+        <img src="shampoo.jfif" alt="shampoo" height="150px" width="150px">
+        <div class="item-name">Loreal Shampoo</div>
+      </div>
+      <div class="item-quantity">
+        <button>-</button>
+        <span>1</span>
+        <button>+</button>
+      </div>
+      <div class="item-price">₹185</div>
+    </div>
+
+    <div class="cart-item">
+        <div class="item-details">
+          <img src="milk.jfif" alt="milk" height="150px" width="150px">
+          <div class="item-name">Amul Milk</div>
+        </div>
+        <div class="item-quantity">
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </div>
+        <div class="item-price">₹60</div>
+      </div>
+
+
+    <div class="cart-total">
+      Total: ₹447
+    </div>
+
+    <a href="checkout.html" class="checkout-button">Proceed to Checkout</a>
+  </div>
+  <a href="project2.html">Back To Home</a>
+  <footer>&copy;2025.Freshly Yours.All Rights Reserved.</footer>
+</body>
+</html>

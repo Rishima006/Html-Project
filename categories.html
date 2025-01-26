@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #aacca4fe;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #0a3106;
+      padding: 1rem;
+      color: white;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .categories-container {
+      max-width: 1200px;
+      margin: 20px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .category-box {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .category-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .category-box h3 {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+
+    .category-box img {
+      max-width: 100%;
+      height: 100px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    footer {
+        text-align: center;
+        background-color: #0a3106;
+      padding: 1rem;
+      color: #fff;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    SHOP BY CATEGORY
+  </header>
+
+  <div class="categories-container">
+    <div class="category-box">
+      <img src="tea.jfif" alt="Tea Time Snacks" height="150px" width="150px">
+      <h3>Tea Time Snacks</h3>
+    </div>
+    <div class="category-box">
+      <img src="veg fruit.jfif" alt="Fruits and Vegetables" height="150px" width="150px">
+      <h3>Fresh Fruits and Vegetables</h3>
+    </div>
+    <div class="category-box">
+      <img src="cleaning.jfif" alt="Cleaning Supplies" height="150px" width="150px">
+      <h3>Cleaning Supplies</h3>
+    </div>
+    <div class="category-box">
+      <img src="soft drinks.jfif" alt="Soft Drinks" height="150px" width="150px">
+      <h3>Soft Drinks</h3>
+    </div>
+    <div class="category-box">
+      <img src="toiletries.jfif" alt="Toiletries" height="150px" width="150px">
+      <h3>Toiletries</h3>
+    </div>
+    <div class="category-box">
+        <img src="kitchen.jfif" alt="Tea Time Snacks" height="150px" width="150px">
+        <h3>Kitchen Appliances</h3>
+      </div>
+      <div class="category-box">
+        <img src="grocery.jfif" alt="Tea Time Snacks" height="150px" width="150px">
+        <h3>Groceries</h3>
+      </div>
+      <div class="category-box">
+        <img src="poultry.jfif" alt="Tea Time Snacks" height="150px" width="150px">
+        <h3>Poultry</h3>
+      </div>
+      <div class="category-box">
+        <img src="sale.jfif" alt="Tea Time Snacks" height="150px" width="150px">
+        <h3>Current Sale Items</h3>
+      </div>
+      <div class="category-box">
+        <img src="bakery.jfif" alt="Tea Time Snacks" height="150px" width="150px">
+        <h3>Bakery Items</h3>
+      </div>
+    
+  </div>
+  <a href="project2.html">Back To Home</a>
+  <footer>&copy;2025.Freshly Yours. All Rights Reserved.</footer>
+</body>
+</html>
